@@ -1,12 +1,15 @@
 ﻿using System;
 
-namespace csharp_snippets
+namespace core_test_algo
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            (new Solution_MaxArea()).Test();
+            // (new Solution_RegularExpr()).Test();
+            // (new Solution_ZipZaG()).Test();
+            // (new EnumLearn()).Test();
         }
     }
 }
