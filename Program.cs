@@ -10,7 +10,9 @@ namespace core_test_algo
             // (new Solution_RegularExpr()).Test();
             // (new Solution_ZipZaG()).Test();
             // (new EnumLearn()).Test();
-            (new Solution_Temp1()).Test();
+            // (new Solution_HasAlternatingBits()).Test();
+            (new Solution_MaxAreaOfIsland()).Test();
+
         }
     }
 }
