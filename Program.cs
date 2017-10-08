@@ -6,10 +6,11 @@ namespace core_test_algo
     {
         static void Main(string[] args)
         {
-            (new Solution_MaxArea()).Test();
+            // (new Solution_MaxArea()).Test();
             // (new Solution_RegularExpr()).Test();
             // (new Solution_ZipZaG()).Test();
             // (new EnumLearn()).Test();
+            (new Solution_Temp1()).Test();
         }
     }
 }
