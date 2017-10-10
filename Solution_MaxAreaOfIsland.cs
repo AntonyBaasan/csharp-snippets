@@ -73,17 +73,16 @@ namespace core_test_algo
             visited[x, y] = true;
 
             if (grid[x, y] == 0)
-            {
                 return 0;
-            }
+
+            int[] xDiff = new int []{-1, 1, 0, 0};
+            int[] yDiff = new int []{ 0, 0, -1, 1};
 
             int sum = 0;
-            sum += GetArea(grid, x - 1, y, visited, rows, cols);
-            sum += GetArea(grid, x + 1, y, visited, rows, cols);
-            sum += GetArea(grid, x, y - 1, visited, rows, cols);
-            sum += GetArea(grid, x, y + 1, visited, rows, cols);
-            return 1 + sum;
+            for (int i = 0; i < 4; i++)
+                sum += GetArea(grid, x + xDiff[i], y+yDiff[i], visited, rows, cols);
 
+            return 1 + sum;
         }
 
         private bool InBound(int[,] grid, int x, int y, int rows, int cols)
