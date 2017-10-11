@@ -64,15 +64,25 @@ namespace core_test_algo
         {
             if (islands.Count == 0)
                 return false;
+
             foreach (var oldIsland in islands)
             {
-                if (oldIsland.Count != island.Count())
-                    continue;
-                for (int i = 0; i < oldIsland.Count; i++)
+                if (AreIslandsEqual(oldIsland, island))
                 {
-                    if (!oldIsland[i].SequenceEqual(island[i]))
-                        return false;
+                    return true;
                 }
+            }
+            return false;
+        }
+
+        private bool AreIslandsEqual(List<List<int>> island1, List<List<int>> island2)
+        {
+            if (island1.Count != island2.Count())
+                return false;
+            for (int i = 0; i < island1.Count; i++)
+            {
+                if (!island1[i].SequenceEqual(island2[i]))
+                    return false;
             }
             return true;
         }
@@ -91,9 +101,7 @@ namespace core_test_algo
             for (int d = 0; d < 4; d++)
                 Dfs(grid, i0, j0, i + xDiff[d], j + yDiff[d], m, n, island);
 
-
             return true;
-
         }
     }
 }
