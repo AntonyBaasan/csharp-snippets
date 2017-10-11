@@ -1,4 +1,5 @@
 ﻿using System;
+using csharp_snippets;
 
 namespace core_test_algo
 {
@@ -12,7 +13,8 @@ namespace core_test_algo
             // (new EnumLearn()).Test();
             // (new Solution_HasAlternatingBits()).Test();
             // (new Solution_MaxAreaOfIsland()).Test();
-            (new Solution_NumberOfDistinctIslands()).Test();
+            // (new Solution_NumberOfDistinctIslands()).Test();
+            (new Sol_MergeTwoLists()).Test();
 
         }
     }
