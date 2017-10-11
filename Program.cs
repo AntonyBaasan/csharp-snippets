@@ -11,7 +11,8 @@ namespace core_test_algo
             // (new Solution_ZipZaG()).Test();
             // (new EnumLearn()).Test();
             // (new Solution_HasAlternatingBits()).Test();
-            (new Solution_MaxAreaOfIsland()).Test();
+            // (new Solution_MaxAreaOfIsland()).Test();
+            (new Solution_NumberOfDistinctIslands()).Test();
 
         }
     }
