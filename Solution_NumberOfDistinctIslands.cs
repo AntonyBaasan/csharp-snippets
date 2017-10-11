@@ -52,20 +52,36 @@ namespace core_test_algo
                     var island = new List<List<int>>();
 
                     if (Dfs(grid, i, j, i, j, rows, cols, island))
-                        islands.Add(island);
+                        if (!ContainsIsland(islands, island))
+                            islands.Add(island);
                 }
             }
 
             return islands.Count;
         }
 
+        private bool ContainsIsland(HashSet<List<List<int>>> islands, List<List<int>> island)
+        {
+            if (islands.Count == 0)
+                return false;
+            foreach (var oldIsland in islands)
+            {
+                if (oldIsland.Count != island.Count())
+                    continue;
+                for (int i = 0; i < oldIsland.Count; i++)
+                {
+                    if (!oldIsland[i].SequenceEqual(island[i]))
+                        return false;
+                }
+            }
+            return true;
+        }
+
         private bool Dfs(int[,] grid, int i0, int j0, int i, int j, int m, int n, List<List<int>> island)
         {
             if (i < 0 || m <= i || j < 0 || n <= j || grid[i, j] <= 0) return false;
 
-            int ii = i - i0;
-            int jj = j - j;
-            island.Add(Enumerable.Range(ii < jj ? ii : jj, ii < jj ? jj - ii : ii - jj).ToList());
+            island.Add((new int[] { i - i0, j - j0 }).ToList());
 
             grid[i, j] *= -1;
 
