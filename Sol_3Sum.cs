@@ -3,10 +3,12 @@ using System.Collections.Generic;
 
 namespace csharp_snippets
 {
-    public class Sol_3Sum
+    public class Sol_3Sum : Sol
     {
-        public void Test()
+        public override void Test()
         {
+            Console.WriteLine($"========={this.GetType().Name}=======");
+
             int[] S = new[] { -1, 0, 1, 2, -1, -4 };
             var res = ThreeSum(S);
 
