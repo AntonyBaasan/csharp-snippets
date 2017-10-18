@@ -30,7 +30,7 @@ namespace core_test_algo
         {
             int rows = grid.GetLength(0);
             int cols = grid.GetLength(1);
-            bool[,] visited  = new bool[rows, cols];
+            bool[,] visited = new bool[rows, cols];
 
             int maxArea = 0;
             for (int i = 0; i < rows; i++)
@@ -75,12 +75,12 @@ namespace core_test_algo
             if (grid[x, y] == 0)
                 return 0;
 
-            int[] xDiff = new int []{-1, 1, 0, 0};
-            int[] yDiff = new int []{ 0, 0, -1, 1};
+            int[] xDiff = new int[] { -1, 1, 0, 0 };
+            int[] yDiff = new int[] { 0, 0, -1, 1 };
 
             int sum = 0;
             for (int i = 0; i < 4; i++)
-                sum += GetArea(grid, x + xDiff[i], y+yDiff[i], visited, rows, cols);
+                sum += GetArea(grid, x + xDiff[i], y + yDiff[i], visited, rows, cols);
 
             return 1 + sum;
         }

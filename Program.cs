@@ -16,7 +16,8 @@ namespace core_test_algo
             // (new Solution_NumberOfDistinctIslands()).Test();
             // (new Sol_MergeTwoLists()).Test();
             // (new Sol_3Sum()).Test();
-            (new Sol_CountBinarySubstrings()).Test();
+            // (new Sol_CountBinarySubstrings()).Test();
+            (new Sol_CanPartitionKSubsets()).Test();
 
         }
     }
