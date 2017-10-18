@@ -7,8 +7,8 @@ namespace csharp_snippets
         public override void Test()
         {
             Console.WriteLine(CountBinarySubstrings("00110011") + " = " + 6);
-            // Console.WriteLine(CountBinarySubstrings("10101") + " = " + 4);
-            // Console.WriteLine(CountBinarySubstrings("00110") + " = " + 3);
+            Console.WriteLine(CountBinarySubstrings("10101") + " = " + 4);
+            Console.WriteLine(CountBinarySubstrings("00110") + " = " + 3);
         }
 
         public int CountBinarySubstrings(string s)
