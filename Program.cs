@@ -19,7 +19,9 @@ namespace core_test_algo
             // (new Sol_3Sum()).Test();
             // (new Sol_CountBinarySubstrings()).Test();
             // (new Sol_CanPartitionKSubsets()).Test();
-            (new Sol_BestTimeToBuyAndSellStock1()).Test();
+            // (new Sol_BestTimeToBuyAndSellStock1()).Test();
+            (new Sol_MinASCIIDeleteSumForTwoStrings()).Test();
+            
         }
     }
 }
