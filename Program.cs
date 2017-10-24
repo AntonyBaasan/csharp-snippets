@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using csharp_snippets;
 
 namespace core_test_algo
@@ -17,8 +18,8 @@ namespace core_test_algo
             // (new Sol_MergeTwoLists()).Test();
             // (new Sol_3Sum()).Test();
             // (new Sol_CountBinarySubstrings()).Test();
-            (new Sol_CanPartitionKSubsets()).Test();
-
+            // (new Sol_CanPartitionKSubsets()).Test();
+            (new Sol_BestTimeToBuyAndSellStock1()).Test();
         }
     }
 }
