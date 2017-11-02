@@ -8,7 +8,7 @@ namespace core_test_algo
     {
         static void Main(string[] args)
         {
-            (new Sol_IntReverse()).Test();
+            (new Sol_MaxSubarray()).Test();
         }
     }
 }
