@@ -8,7 +8,7 @@ namespace core_test_algo
     {
         static void Main(string[] args)
         {
-            (new Sol_LegthOfLastWord()).Test();
+            (new Sol_ImplementStrStr()).Test();
         }
     }
 }
